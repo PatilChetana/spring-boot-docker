@@ -1,0 +1,17 @@
+create new job in jenkins as freestyle, give git url, poll SCM *****,
+build steps 1) top level maven - install
+build step 2) docker build and publish plugin - repo name as chetana249/anyimagename with tag : latestorany
+apply and save.
+
+to configure docker-hub in jenkins add dockerhub credentials in jenkins inside manage creditionals, username and password.
+
+build and check
+
+dockerhub see if image present
+inside your cmd:
+
+create container and then browse the website/url
+
+1) docker images
+2) docker run -d -p 8091:8080 chetana249/imagename:latest
+3) browse localhost:8091/message
