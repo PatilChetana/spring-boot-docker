@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: spring-boot
-        image: chetana249/spring-boot-docker10-ubuntu
+        image: chetana249/spring-boot-dockerimg-ubuntu
         ports:
         - containerPort: 8080
         
