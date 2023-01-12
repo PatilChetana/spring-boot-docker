@@ -11,7 +11,7 @@ public class SpringBootDockerApplication {
 
 	@GetMapping("/message")
 	public String getMessage() {
-		return "Successfully Deployed to Kubernetes...!!";
+		return "Successfully Deployed to Ubuntu Server Kubernetes...!!";
 	}
 
 	public static void main(String[] args) {
