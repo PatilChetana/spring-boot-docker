@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SpringBootDockerApplication {
 
-	@GetMapping("/message")
+	@GetMapping("/home")
 	public String getMessage() {
 		return "Successfully Deployed to Ubuntu Server Kubernetes...!!";
 	}
