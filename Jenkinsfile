@@ -36,7 +36,7 @@ pipeline {
         
         stage ('Deploy Application to K8s'){
             steps{
-               git credentialsId: 'docker-hub', url: 'https://github.com/PatilChetana/spring-boot-docker.git' 
+               // git credentialsId: 'docker-hub', url: 'https://github.com/PatilChetana/spring-boot-docker.git' 
                withKubeConfig(caCertificate: '', clusterName: '', contextName: '', credentialsId: 'K8s-ubuntu', namespace: '', restrictKubeConfigAccess: false, serverUrl: '') {
                     sh 'kubectl get nodes'
                     
