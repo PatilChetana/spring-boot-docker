@@ -14,11 +14,12 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t $REPOSITORY_URI:v1 .
+      - docker tag $REPOSITORY_URI:v1 $REPOSITORY_URI:v2
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - docker push $REPOSITORY_URI:v1
+      - docker push $REPOSITORY_URI:v2
 artifacts:
   files:
    - target/spring-boot-docker.jar
